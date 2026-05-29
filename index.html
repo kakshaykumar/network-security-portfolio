@@ -23,7 +23,7 @@
           <span></span><span></span>
         </button>
         <div class="nav-links">
-          <a href="#about">Overview</a>
+          <a href="#about">About</a>
           <a href="#work">Experience</a>
           <a href="#skills">Skills</a>
           <a href="#projects">Projects</a>
@@ -49,18 +49,26 @@
         </div>
 
         <div class="hero-grid">
-          <!-- LEFT -->
-          <div class="hero-copy hero-copy-center reveal">
-            <h1 class="hero-name">Akshaykumar Kathirvelu</h1>
-            <p class="hero-role"><span class="prompt-sym">$</span> <span id="typing-role"></span><span class="t-cursor">|</span></p>
 
-            <div class="hero-status">
-              <span class="status-pulse"></span>
-              <span>Status: <strong>Available_To_Work</strong></span>
+          <!-- LEFT: profile terminal + controls below -->
+          <div class="hero-left-col reveal">
+            <div class="hero-panel hero-panel-profile">
+              <div class="terminal-window">
+                <div class="terminal-bar">
+                  <span class="t-dot"></span><span class="t-dot"></span><span class="t-dot"></span>
+                  <span class="terminal-title-center">profile</span>
+                  <span class="t-bar-right"></span>
+                </div>
+                <div class="terminal-body">
+                  <p><span class="prompt">$</span> whoami</p>
+                  <p class="term-name">Akshaykumar Kathirvelu</p>
+                  <p class="term-gap">&nbsp;</p>
+                  <p class="hero-role"><span class="prompt">$</span> <span id="typing-role"></span><span class="t-cursor">|</span></p>
+                </div>
+              </div>
             </div>
-            <p class="hero-tagline"><span class="tag-hash">#</span> connect to collaborate – to fulfill your security needs</p>
 
-            <div class="hero-actions">
+            <div class="hero-controls">
               <a class="btn-primary" href="#projects">View My Work →</a>
               <div class="hero-social-row">
                 <a class="btn-icon-sq" href="https://github.com/kakshaykumar" target="_blank" rel="noreferrer" aria-label="GitHub">
@@ -82,38 +90,46 @@
                 </a>
               </div>
             </div>
-
-            <div class="hero-signals">
-              <span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Threat Detection</span>
-              <span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>Infrastructure Security</span>
-              <span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>Incident Response</span>
-              <span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>Cloud Security</span>
-            </div>
           </div>
 
-          <!-- RIGHT: terminal -->
-          <aside class="hero-panel reveal" aria-label="Profile terminal">
+          <!-- RIGHT: job_search terminal -->
+          <aside class="hero-panel reveal" aria-label="Job search terminal">
             <div class="terminal-window">
               <div class="terminal-bar">
                 <span class="t-dot"></span><span class="t-dot"></span><span class="t-dot"></span>
-                <span class="terminal-title-center">profile</span>
                 <span class="t-bar-right"></span>
               </div>
+              <div class="terminal-status-header">
+                <p>Status: <strong class="term-avail">Available_To_Work</strong></p>
+                <p class="term-tagline-line"><span class="tag-hash">#</span> connect to collaborate – to fulfill your security needs</p>
+              </div>
               <div class="terminal-body">
-                <p><span class="prompt">$</span> whoami</p>
-                <p class="term-name">Akshaykumar Kathirvelu</p>
+                <p><span class="prompt">$</span> cat job_search.txt</p>
                 <p class="term-gap">&nbsp;</p>
-                <p><span class="prompt">$</span> cat focus.txt</p>
-                <p class="term-seeking"><strong>Actively Seeking →</strong></p>
-                <p class="term-opp-label">FULL-TIME OPPORTUNITIES</p>
+                <p class="term-seeking-center">Actively Seeking → Defensive Security Roles</p>
+                <p class="term-opp-center">FULL-TIME OPPORTUNITIES</p>
+                <p class="term-gap">&nbsp;</p>
+                <p class="term-roles-label">Open to Roles:</p>
                 <p class="term-focus">SOC Analyst &nbsp;·&nbsp; Network Security &nbsp;·&nbsp; Cloud Security</p>
               </div>
             </div>
           </aside>
+
         </div>
+
+        <!-- Full-width signals row -->
+        <div class="hero-signals-full">
+          <div class="hero-signals">
+            <span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Threat Detection</span>
+            <span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>Infrastructure Security</span>
+            <span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>Incident Response</span>
+            <span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>Cloud Security</span>
+          </div>
+        </div>
+
       </section>
 
-      <!-- Overview -->
+      <!-- ABOUT -->
       <section class="section reveal" id="about" aria-labelledby="about-title">
         <p class="section-eyebrow">EXPERIENCE OVERVIEW</p>
         <div class="section-heading">
@@ -153,7 +169,7 @@
           </div>
           <div class="metric-card">
             <div class="metric-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="24" height="24"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"/></svg></div>
-            <div class="metric-text"><strong>6+</strong><span>Security Labs &amp; Projects Built</span></div>
+            <div class="metric-text"><strong>6+</strong><span>Security Labs &amp; Projects Built &amp; Documented</span></div>
           </div>
           <div class="metric-card">
             <div class="metric-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="24" height="24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
