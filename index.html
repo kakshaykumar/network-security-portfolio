@@ -3,32 +3,39 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Akshaykumar Kathirvelu — Cybersecurity professional targeting SOC Analyst, Network Security, and Cloud Security roles." />
+    <meta
+      name="description"
+      content="Infrastructure security portfolio for Akshaykumar Kathirvelu: network security, security operations, cloud security, IAM, and applied security labs."
+    />
     <meta name="theme-color" content="#08111f" />
-    <title>Akshaykumar Kathirvelu | Cybersecurity Portfolio</title>
+    <meta property="og:title" content="Akshaykumar Kathirvelu | Infrastructure Security Portfolio" />
+    <meta
+      property="og:description"
+      content="Hands-on infrastructure security portfolio covering cloud security, network security labs, malware detection research, identity security, and CTF writing."
+    />
+    <meta property="og:type" content="website" />
+    <title>Akshaykumar Kathirvelu | Infrastructure Security Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <canvas id="bg-canvas" aria-hidden="true"></canvas>
     <a class="skip-link" href="#main">Skip to content</a>
 
-    <!-- NAV -->
     <header class="site-header">
       <nav class="nav" aria-label="Primary navigation">
-        <a class="brand" href="#top" aria-label="Home">
+        <a class="brand" href="#top" aria-label="Akshaykumar Kathirvelu home">
           <span class="brand-mark">AK</span>
-          <span class="brand-name">Akshaykumar Kathirvelu</span>
+          <span>Akshaykumar Kathirvelu</span>
         </a>
         <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
-          <span></span><span></span>
+          <span></span>
+          <span></span>
         </button>
         <div class="nav-links">
           <a href="#about">About</a>
           <a href="#work">Experience</a>
-          <a href="#skills">Skills</a>
           <a href="#projects">Projects</a>
-          <a href="#certs">Academics</a>
-          <a href="#writing">Writeups</a>
+          <a href="#skills">Skills</a>
+          <a href="#writing">Writing</a>
           <a href="#contact">Contact</a>
         </div>
       </nav>
@@ -36,530 +43,575 @@
 
     <main id="main">
 
-      <!-- HERO -->
+      <!-- ── HERO ─────────────────────────────────────────────── -->
       <section class="hero section" id="top">
-        <div class="hero-deco hero-deco-shield" aria-hidden="true">
-          <svg viewBox="0 0 60 70" fill="none"><path d="M30 4L6 14v20c0 14.4 10.2 27.8 24 31 13.8-3.2 24-16.6 24-31V14L30 4z" stroke="rgba(138,215,176,0.3)" stroke-width="2" fill="rgba(138,215,176,0.04)"/><path d="M22 35l6 6 12-12" stroke="rgba(138,215,176,0.5)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </div>
-        <div class="hero-deco hero-deco-lock" aria-hidden="true">
-          <svg viewBox="0 0 50 60" fill="none"><rect x="8" y="25" width="34" height="28" rx="4" stroke="rgba(107,183,232,0.3)" stroke-width="2" fill="rgba(107,183,232,0.04)"/><path d="M16 25v-8a9 9 0 0 1 18 0v8" stroke="rgba(107,183,232,0.3)" stroke-width="2"/><circle cx="25" cy="39" r="3" fill="rgba(107,183,232,0.4)"/></svg>
-        </div>
-        <div class="hero-deco hero-deco-nodes" aria-hidden="true">
-          <svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="40" r="5" fill="rgba(138,215,176,0.35)"/><circle cx="15" cy="20" r="3.5" fill="rgba(107,183,232,0.3)"/><circle cx="65" cy="15" r="3.5" fill="rgba(107,183,232,0.3)"/><circle cx="70" cy="60" r="3.5" fill="rgba(138,215,176,0.25)"/><circle cx="12" cy="62" r="3.5" fill="rgba(138,215,176,0.25)"/><line x1="40" y1="40" x2="15" y2="20" stroke="rgba(138,215,176,0.2)" stroke-width="1"/><line x1="40" y1="40" x2="65" y2="15" stroke="rgba(107,183,232,0.2)" stroke-width="1"/><line x1="40" y1="40" x2="70" y2="60" stroke="rgba(138,215,176,0.2)" stroke-width="1"/><line x1="40" y1="40" x2="12" y2="62" stroke="rgba(107,183,232,0.2)" stroke-width="1"/></svg>
-        </div>
-
         <div class="hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Security Operations · Network Security · Cloud Security</p>
+            <h1>Understanding How Systems <i>Break</i> Engineering How They Stay <i>Secure</i></h1>
+            <p class="typing-line">
+              <span id="typing-role"></span><span class="t-cursor">|</span>
+            </p>
 
-          <!-- LEFT: profile terminal + controls below -->
-          <div class="hero-left-col reveal">
-            <div class="hero-panel hero-panel-profile">
-              <div class="terminal-window">
-                <div class="terminal-bar">
-                  <span class="t-dot"></span><span class="t-dot"></span><span class="t-dot"></span>
-                  <span class="terminal-title-center">profile</span>
-                  <span class="t-bar-right"></span>
-                </div>
-                <div class="terminal-body">
-                  <p><span class="prompt">$</span> whoami</p>
-                  <p class="term-name">Akshaykumar Kathirvelu</p>
-                  <p class="term-gap">&nbsp;</p>
-                  <p class="hero-role"><span class="prompt">$</span> <span id="typing-role"></span><span class="t-cursor">|</span></p>
-                </div>
-              </div>
+            <div class="hero-actions" aria-label="Primary links">
+              <a class="button primary" href="#projects">View My Work</a>
+              <a class="button" href="https://github.com/kakshaykumar" target="_blank" rel="noreferrer">GitHub</a>
+              <a class="button" href="https://www.linkedin.com/in/akshaykumar-kathirvelu/" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a class="button" href="https://medium.com/@akshaykumar_90336" target="_blank" rel="noreferrer">Medium</a>
+              <a class="button" href="mailto:kakshaykumark@gmail.com">Email</a>
             </div>
-
-            <div class="hero-controls">
-              <a class="btn-primary" href="#projects">View My Work →</a>
-              <div class="hero-social-row">
-                <a class="btn-icon-sq" href="https://github.com/kakshaykumar" target="_blank" rel="noreferrer" aria-label="GitHub">
-                  <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
-                </a>
-                <a class="btn-icon-sq" href="https://www.linkedin.com/in/akshaykumar-kathirvelu/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
-                  <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-                </a>
-                <a class="btn-icon-sq" href="https://medium.com/@akshaykumar_90336" target="_blank" rel="noreferrer" aria-label="Medium">
-                  <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></svg>
-                </a>
-                <a class="btn-icon-sq" href="mailto:kakshaykumark@gmail.com" aria-label="Email">
-                  <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.272H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
-                </a>
-              </div>
-              <div class="hero-platform-row">
-                <a class="hero-platform-link" href="https://tryhackme.com/p/akshayk" target="_blank" rel="noreferrer">
-                  <img src="https://cdn.simpleicons.org/tryhackme/8ad7b0" alt="TryHackMe" width="13" height="13">TryHackMe
-                </a>
-              </div>
+            <div class="signal-row" aria-label="Portfolio signals">
+              <span>Threat Detection</span>
+              <span>Infrastructure Security</span>
+              <span>Incident Response</span>
+              <span>Cloud Security</span>
             </div>
           </div>
 
-          <!-- RIGHT: job_search terminal -->
-          <aside class="hero-panel reveal" aria-label="Job search terminal">
+          <aside class="hero-panel reveal hero-panel-auto" aria-label="Profile summary">
             <div class="terminal-window">
               <div class="terminal-bar">
-                <span class="t-dot"></span><span class="t-dot"></span><span class="t-dot"></span>
-                <span class="t-bar-right"></span>
-              </div>
-              <div class="terminal-status-header">
-                <p>Status: <strong class="term-avail">Available_To_Work</strong></p>
-                <p class="term-tagline-line"><span class="tag-hash">#</span> connect to collaborate – to fulfill your security needs</p>
+                <span></span><span></span><span></span>
               </div>
               <div class="terminal-body">
-                <p><span class="prompt">$</span> cat job_search.txt</p>
-                <p class="term-gap">&nbsp;</p>
-                <p class="term-seeking-center">Actively Seeking → Defensive Security Roles</p>
-                <p class="term-opp-center">FULL-TIME OPPORTUNITIES</p>
-                <p class="term-gap">&nbsp;</p>
-                <p class="term-roles-label">Open to Roles:</p>
-                <p class="term-focus">SOC Analyst &nbsp;·&nbsp; Network Security &nbsp;·&nbsp; Cloud Security</p>
+                <p><span class="prompt">$</span> whoami</p>
+                <p>Akshaykumar Kathirvelu</p>
+                <p class="term-roles"><strong>Open to Roles →</strong> </p>
+                  <p><span class="term-hl term-hl-sm">SECURITY OPERATIONS · NETWORK SECURITY · CLOUD SECURITY</span></p>
+                <p class="term-loc"><span class="term-hl-dim">Open to Relocation</span> &nbsp;·&nbsp; Fairfax,VA / Washington DC-Baltimore</p>
+                <p style="margin-top:0.65rem"><span class="prompt">$</span> cat focus.txt</p>
+                <p class="term-quote">OFFENSIVE INSIGHT. DEFENSIVE ENGINEERING.</p>
               </div>
             </div>
+
           </aside>
-
         </div>
-
-        <!-- Full-width signals row -->
-        <div class="hero-signals-full">
-          <div class="hero-signals">
-            <span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Threat Detection</span>
-            <span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>Infrastructure Security</span>
-            <span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>Incident Response</span>
-            <span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>Cloud Security</span>
-          </div>
-        </div>
-
       </section>
 
-      <!-- ABOUT -->
-      <section class="section reveal" id="about" aria-labelledby="about-title">
-        <p class="section-eyebrow">EXPERIENCE OVERVIEW</p>
+      <!-- ── ABOUT ───────────────────────────────────────────── -->
+      <section class="section about reveal" id="about" aria-labelledby="about-title">
         <div class="section-heading">
-          <h2 id="about-title">Built through Real-World Experience<br>Not Just Simulations</h2>
+          <h2 id="about-title">Built through Real-World Experience <br> Not Just Simulations</h2>
           <span class="heading-rule"></span>
         </div>
         <div class="about-grid">
-          <div class="about-col">
-            <div class="about-icon-col">
-              <div class="about-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="22" height="22"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
-              <p>My background started in enterprise network security, where security showed up in day-to-day operations across production environments — from packet analysis and centralized logging to vulnerability remediation and access control hardening.</p>
-            </div>
-            <div class="about-icon-col">
-              <div class="about-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="22" height="22"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg></div>
-              <p>Through my Graduate Program and MSSP Internship, I expanded into cloud security, identity access management, threat assessment, and security operations.</p>
-            </div>
-          </div>
-          <div class="about-col">
-            <div class="about-icon-col">
-              <div class="about-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="22" height="22"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
-              <p>I've built hands-on security labs, conducted threat assessments, and produced security documentation that solves real problems — not just theoretical ones.</p>
-            </div>
-            <div class="about-icon-col">
-              <div class="about-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="22" height="22"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg></div>
-              <p>This portfolio introduces my work. GitHub contains the code. Medium contains the insights. Everything here is built, tested, and documented by me.</p>
-            </div>
-          </div>
+          <p>
+            My background started in enterprise network security, where security showed-up
+            in day-to-day operations across production environments from packet analysis and 
+            centralized logging to vulnerability remediation and access control hardening.
+          </p>
+          <p>
+            During my Graduate Program and MSSP Internship, I have built across cloud security,
+            identity access management, threat assessment, and security operations and hands-on 
+            security labs. This site introduces my work; GitHub and Medium provides technical proof.
+          </p>
         </div>
         <div class="metrics">
-          <div class="metric-card">
-            <div class="metric-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="24" height="24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div>
-            <div class="metric-text"><strong>3+</strong><span>Years Enterprise HPE-Aruba Network Security</span></div>
+          <div>
+            <strong>3 Years</strong>
+            <span>Enterprise HPE-Aruba TAC</span>
           </div>
-          <div class="metric-card">
-            <div class="metric-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="24" height="24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
-            <div class="metric-text"><strong>200+</strong><span>Students Mentored as Graduate Teaching Assistant</span></div>
+          <div>
+            <strong>200+</strong>
+            <span>Students Mentored as Teaching Assistant in Information Security</span>
           </div>
-          <div class="metric-card">
-            <div class="metric-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="24" height="24"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"/></svg></div>
-            <div class="metric-text"><strong>6+</strong><span>Security Labs &amp; Projects Built &amp; Documented</span></div>
+          <div>
+            <strong>5+</strong>
+            <span>Security Labs & Projects</span>
           </div>
-          <div class="metric-card">
-            <div class="metric-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="24" height="24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-            <div class="metric-text"><strong>4</strong><span>Industry Recognized Certifications</span></div>
+          <div>
+            <strong>4+</strong>
+            <span>Security Certifications & Trainings</span>
           </div>
         </div>
       </section>
 
-      <!-- EXPERIENCE -->
+      <!-- ── EXPERIENCE ──────────────────────────────────────── -->
       <section class="section reveal" id="work" aria-labelledby="work-title">
-        <p class="section-eyebrow">EXPERIENCE</p>
         <div class="section-heading">
-          <h2 id="work-title">Professional Background</h2>
+          <h2 id="work-title">Experience</h2>
           <span class="heading-rule"></span>
         </div>
+
         <div class="vtimeline">
 
-          <article class="vtl-item reveal">
+          <article class="vtl-item">
             <div class="vtl-dot"></div>
             <div class="vtl-card">
-              <div class="vtl-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="22" height="22"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
-              <div class="vtl-content">
-                <div class="vtl-header">
-                  <div>
-                    <h3>Graduate Teaching Assistant</h3>
-                    <p class="vtl-sub">IT 223 — Information Security Fundamentals</p>
-                    <p class="vtl-org">George Mason University · Fairfax, VA</p>
-                  </div>
-                  <div class="vtl-right">
-                    <span class="vtl-badge vtl-badge-blue">Part-Time</span>
-                    <span class="vtl-date">Aug 2025 – May 2026</span>
-                  </div>
+              <div class="vtl-header">
+                <div>
+                  <h3>Graduate Teaching Assistant</h3>
+                  <p class="vtl-sub">Information Security</p>
+                  <p class="vtl-org">George Mason University · Fairfax, VA</p>
                 </div>
-                <p>Mentored 200+ students in Information Security Fundamentals — providing hands-on guidance in security labs, vulnerability assessment methodologies, phishing investigation, and cryptography fundamentals.</p>
-                <div class="tags">
-                  <span>Information Security</span><span>Vulnerability Assessment</span><span>ZyBooks Labs</span><span>Cryptography</span><span>Student Mentorship</span>
+                <div class="vtl-right">
+                  <span class="vtl-badge">PART-TIME</span>
+                  <span class="vtl-date">Aug 2025 – May 2026</span>
                 </div>
+              </div>
+              <p>
+                Mentored 100+ students in Information Security, providing hands-on guidance in security labs, 
+                vulnerability assessment methodologies, phishing investigation, cryptography fundamentals, and technical feedback.
+              </p>
+              <div class="tags">
+                <span>Information Security</span><span>Vulnerability Assessment</span><span>ZyBooks - Security Labs</span><span>Student Mentorship</span>
               </div>
             </div>
           </article>
 
-          <article class="vtl-item reveal">
+          <article class="vtl-item">
             <div class="vtl-dot"></div>
             <div class="vtl-card">
-              <div class="vtl-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="22" height="22"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg></div>
-              <div class="vtl-content">
-                <div class="vtl-header">
-                  <div>
-                    <h3>Cybersecurity SME Intern</h3>
-                    <p class="vtl-sub">MSSP Practice</p>
-                    <p class="vtl-org">Comtech LLC · Reston, VA</p>
-                  </div>
-                  <div class="vtl-right">
-                    <span class="vtl-badge">Internship</span>
-                    <span class="vtl-date">May 2025 – Aug 2025</span>
-                  </div>
+              <div class="vtl-header">
+                <div>
+                  <h3>Cybersecurity SME Intern</h3>
+                  <p class="vtl-sub">MSSP Practice</p>
+                  <p class="vtl-org">Comtech LLC · Reston, VA</p>
                 </div>
-                <p>Contributed to managed security service delivery across healthcare and US State/Local Government clients — STRIDE/DREAD threat assessments, SOC validation lab setup, whitepaper authoring, proposal development, and CMMC readiness.</p>
-                <div class="vtl-impact">
-                  <div><strong>3</strong><span>Technical Whitepapers</span></div>
-                  <div><strong>STRIDE/DREAD</strong><span>Threat Modeling</span></div>
-                  <div><strong>CMMC</strong><span>Readiness Support</span></div>
+                <div class="vtl-right">
+                  <span class="vtl-badge">Internship</span>
+                  <span class="vtl-date">May 2025 – Aug 2025</span>
                 </div>
-                <div class="tags">
-                  <span>MSSP</span><span>Threat Assessment</span><span>CMMC</span><span>STRIDE</span><span>DREAD</span><span>SOC Validation</span>
-                </div>
+              </div>
+              <p>
+                Contributed to managed security service delivery and client security engagements, 
+                supporting STRIDE/DREAD threat modeling, cybersecurity whitepapers, proposal development, 
+                SOC validation, and CMMC readiness efforts across healthcare and state/local government environments.
+              </p>
+              <div class="tags">
+                <span>MSSP</span><span>Threat Assessment</span><span>CMMC</span><span>STRIDE</span><span>DREAD</span>
               </div>
             </div>
           </article>
 
-          <article class="vtl-item reveal">
+          <article class="vtl-item">
             <div class="vtl-dot"></div>
             <div class="vtl-card">
-              <div class="vtl-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="22" height="22"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-              <div class="vtl-content">
-                <div class="vtl-header">
-                  <div>
-                    <h3>Network Security Engineer, L1 → L2 Escalation</h3>
-                    <p class="vtl-sub">Network Security &amp; Infrastructure Operations</p>
-                    <p class="vtl-org">Movate Technologies / HPE-Aruba Networking · Chennai, India</p>
-                  </div>
-                  <div class="vtl-right">
-                    <span class="vtl-badge">Full-Time</span>
-                    <span class="vtl-date">Sep 2021 – Jul 2024</span>
-                  </div>
+              <div class="vtl-header">
+                <div>
+                  <h3>Network Security Engineer, L1 → L2 Escalation</h3>
+                  <p class="vtl-sub">Network Security & Infrastructure Operations</p>
+                  <p class="vtl-org">Movate Technologies / HPE-Aruba Networking · Chennai, India</p>
                 </div>
-                <p>Supported enterprise HPE-Aruba production environments across network security operations, escalation troubleshooting, and infrastructure hardening. Centralized syslog visibility through Splunk/HPE IMC/SolarWinds, led vulnerability remediation with Qualys and Nessus, and hardened access controls via 802.1X, RADIUS, and TACACS+.</p>
-                <div class="vtl-impact">
-                  <div><strong>2,500+</strong><span>Switches &amp; Routers analyzed</span></div>
-                  <div><strong>3,000+</strong><span>Enterprise users supported</span></div>
-                  <div><strong>Hours → Minutes</strong><span>Response time improvement</span></div>
+                <div class="vtl-right">
+                  <span class="vtl-badge">Full-time</span>
+                  <span class="vtl-date">Sep 2021 – Jul 2024</span>
                 </div>
-                <div class="tags">
-                  <span>Wireshark</span><span>Nmap</span><span>Splunk</span><span>Qualys</span><span>Nessus</span><span>802.1X</span><span>RADIUS</span><span>TACACS+</span>
+              </div>
+              <p>
+                Supported enterprise HPE-Aruba production environments across network security operations, 
+                escalation troubleshooting, and infrastructure hardening. Diagnosed large-scale latency incidents, 
+                centralized syslog visibility through Splunk/HPE IMC/SolarWinds, led vulnerability remediation workflows 
+                using Qualys and Nessus, and strengthened access controls through 802.1X, RADIUS, and TACACS+.
+              </p>
+              <div class="vtl-impact">
+                <div>
+                  <strong>5,000+</strong>
+                  <span>Users supported through enterprise remediation</span>
                 </div>
+                <div>
+                  <strong>2,500+</strong>
+                  <span>Switches & Routers - analyzed across production environments</span>
+                </div>
+                <div>
+                  <strong>Hours → Minutes</strong>
+                  <span>Response improvement after log centralization</span>
+                </div>
+              </div>
+              <div class="tags">
+                <span>Wireshark</span><span>Nmap</span><span>Splunk</span><span>Qualys</span><span>Nessus</span><span>802.1X</span><span>VAPT</span>
               </div>
             </div>
           </article>
+
         </div>
       </section>
 
-      <!-- SKILLS -->
-      <section class="section reveal" id="skills" aria-labelledby="skills-title">
-        <p class="section-eyebrow">TECHNICAL SKILLS</p>
-        <div class="section-heading">
-          <h2 id="skills-title">Technical Skills</h2>
-          <span class="heading-rule"></span>
-        </div>
-        <div class="skill-cat-grid">
-          <div class="skill-cat-card">
-            <div class="skill-cat-head">
-              <div class="skill-cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></div>
-              <p class="skill-cat-label">SIEM &amp; Security Monitoring</p>
-            </div>
-            <div class="skill-chips">
-              <span class="chip hi">Splunk (SPL)</span><span class="chip hi">Wireshark</span><span class="chip hi">Nessus / Qualys</span>
-              <span class="chip">Microsoft Sentinel</span><span class="chip">Wazuh</span><span class="chip">Microsoft Defender</span>
-              <span class="chip">HPE IMC / SolarWinds</span><span class="chip">Windows Event Viewer</span>
-            </div>
-          </div>
-          <div class="skill-cat-card">
-            <div class="skill-cat-head">
-              <div class="skill-cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
-              <p class="skill-cat-label">Network &amp; Infrastructure</p>
-            </div>
-            <div class="skill-chips">
-              <span class="chip hi">HPE-Aruba (Comware, ArubaOS CX)</span><span class="chip hi">802.1X / RADIUS / TACACS+</span>
-              <span class="chip hi">FortiGate / Firewall Management</span><span class="chip">Cisco / Arista</span>
-              <span class="chip">VLANs / STP / OSPF</span><span class="chip">BGP / MPLS</span><span class="chip">IPSec / SSL/TLS</span>
-            </div>
-          </div>
-          <div class="skill-cat-card">
-            <div class="skill-cat-head">
-              <div class="skill-cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg></div>
-              <p class="skill-cat-label">Cloud &amp; IAM</p>
-            </div>
-            <div class="skill-chips">
-              <span class="chip hi">Microsoft Azure</span><span class="chip hi">Active Directory / Entra ID</span>
-              <span class="chip">Google Cloud Platform</span><span class="chip">AWS</span>
-              <span class="chip">IAM / RBAC</span><span class="chip">Defender for Cloud</span><span class="chip">GuardDuty / CloudTrail</span>
-            </div>
-          </div>
-          <div class="skill-cat-card">
-            <div class="skill-cat-head">
-              <div class="skill-cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><path d="M14.5 10c-.83 0-1.5-.67-1.5-1.5v-5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5z"/><path d="M20.5 10H19V8.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/><path d="M9.5 14c.83 0 1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5S8 21.33 8 20.5v-5c0-.83.67-1.5 1.5-1.5z"/><path d="M3.5 14H5v1.5c0 .83-.67 1.5-1.5 1.5S2 16.33 2 15.5 2.67 14 3.5 14z"/><path d="M14 14.5c0-.83.67-1.5 1.5-1.5h5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5h-5c-.83 0-1.5-.67-1.5-1.5z"/><path d="M15.5 19H14v1.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5z"/><path d="M10 9.5C10 8.67 9.33 8 8.5 8h-5C2.67 8 2 8.67 2 9.5S2.67 11 3.5 11h5c.83 0 1.5-.67 1.5-1.5z"/><path d="M8.5 5H10V3.5C10 2.67 9.33 2 8.5 2S7 2.67 7 3.5 7.67 5 8.5 5z"/></svg></div>
-              <p class="skill-cat-label">Offensive Security &amp; Assessment</p>
-            </div>
-            <div class="skill-chips">
-              <span class="chip hi">Nmap</span><span class="chip hi">Burp Suite</span><span class="chip hi">YARA</span>
-              <span class="chip">Metasploit</span><span class="chip">Hydra / Kali Linux</span>
-              <span class="chip">SQL Injection</span><span class="chip">OpenSSL / RSA</span>
-            </div>
-          </div>
-          <div class="skill-cat-card">
-            <div class="skill-cat-head">
-              <div class="skill-cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
-              <p class="skill-cat-label">Frameworks &amp; Standards</p>
-            </div>
-            <div class="skill-chips">
-              <span class="chip hi">MITRE ATT&amp;CK</span><span class="chip hi">NIST IR Lifecycle</span><span class="chip hi">OWASP Top 10</span>
-              <span class="chip">STRIDE / DREAD</span><span class="chip">CVSS</span>
-              <span class="chip">CIS Benchmarks</span><span class="chip">CMMC / VAPT</span>
-            </div>
-          </div>
-          <div class="skill-cat-card">
-            <div class="skill-cat-head">
-              <div class="skill-cat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
-              <p class="skill-cat-label">Systems &amp; Automation</p>
-            </div>
-            <div class="skill-chips">
-              <span class="chip hi">Linux / Kali Linux</span><span class="chip hi">PowerShell</span><span class="chip hi">Python</span>
-              <span class="chip">Windows</span><span class="chip">Bash</span><span class="chip">SQL</span><span class="chip">Git / GitHub</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- PROJECTS -->
+      <!-- ── PROJECTS ────────────────────────────────────────── -->
       <section class="section reveal" id="projects" aria-labelledby="projects-title">
-        <p class="section-eyebrow">PROJECTS</p>
         <div class="section-heading with-action">
           <div>
             <h2 id="projects-title">Security Engineering Projects</h2>
             <span class="heading-rule"></span>
           </div>
-          <a class="text-link" href="https://github.com/kakshaykumar?tab=repositories" target="_blank" rel="noreferrer">All Repos →</a>
-        </div>
-        <div class="proj-grid">
-          <article class="proj-card">
-            <div class="card-top"><span class="proj-cat proj-cat-teal">THREAT INVESTIGATION</span><a class="external-link" href="https://github.com/kakshaykumar/wireshark-network-threat-investigation" target="_blank" rel="noreferrer" aria-label="View repository">↗</a></div>
-            <div class="proj-title-row"><div class="proj-icon proj-icon-teal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="22" height="22"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg></div><h3>Network Threat Investigation — Wireshark</h3></div>
-            <p>Packet-level threat investigation lab simulating 12 attack scenarios — reconnaissance, credential attacks, and protocol vulnerabilities — with real .pcapng evidence and MITRE ATT&amp;CK mapping.</p>
-            <div class="proj-stats"><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg><strong>24</strong><span>Real .pcapng Files</span></div><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg><strong>12</strong><span>Attack Scenarios</span></div><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><strong>10+</strong><span>MITRE TTPs</span></div></div>
-            <div class="tags"><span>Wireshark</span><span>Nmap</span><span>Hydra</span><span>Kali Linux</span><span>MITRE ATT&amp;CK</span><span>Packet Analysis</span></div>
-            <div class="proj-gh-static"><svg viewBox="0 0 24 24" fill="currentColor" width="13" height="13"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg> GitHub</div>
-          </article>
-          <article class="proj-card">
-            <div class="card-top"><span class="proj-cat proj-cat-blue">CLOUD SECURITY</span><a class="external-link" href="https://github.com/kakshaykumar/cloud-security-iaas" target="_blank" rel="noreferrer" aria-label="View repository">↗</a></div>
-            <div class="proj-title-row"><div class="proj-icon proj-icon-blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="22" height="22"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg></div><h3>Azure vs GCP Default IaaS Security Review</h3></div>
-            <p>Comparative security assessment of real Azure and GCP virtual machine deployments — evaluating IAM, network controls, storage exposure, logging gaps, and encryption defaults.</p>
-            <div class="proj-stats"><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg><strong>2</strong><span>Cloud Platforms</span></div><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg><strong>6</strong><span>Security Domains</span></div><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><path d="M9 11l3 3L22 4"/></svg><strong>CIS/NIST</strong><span>Hardening</span></div></div>
-            <div class="tags"><span>Azure</span><span>GCP</span><span>IAM</span><span>CIS Benchmarks</span><span>NIST</span></div>
-            <div class="proj-gh-static"><svg viewBox="0 0 24 24" fill="currentColor" width="13" height="13"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg> GitHub</div>
-          </article>
-          <article class="proj-card">
-            <div class="card-top"><span class="proj-cat proj-cat-purple">NETWORK SECURITY</span><a class="external-link" href="https://github.com/kakshaykumar/network-security-labs" target="_blank" rel="noreferrer" aria-label="View repository">↗</a></div>
-            <div class="proj-title-row"><div class="proj-icon proj-icon-purple"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="22" height="22"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div><h3>Network Security Labs: Vuln Scanning, Protocol Analysis, NAT/VPN</h3></div>
-            <p>Live Nessus vulnerability scanning, multi-protocol Wireshark analysis (ICMP, TLS, TCP, UDP, RTP), and NAT/VPN behavior investigation using real terminal output and packet captures.</p>
-            <div class="proj-stats"><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18"/></svg><strong>3</strong><span>Lab Scenarios</span></div><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg><strong>5</strong><span>Protocols</span></div><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg><strong>Real</strong><span>pcap Data</span></div></div>
-            <div class="tags"><span>Nessus</span><span>Wireshark</span><span>NAT/VPN</span><span>CVSS</span></div>
-            <div class="proj-gh-static"><svg viewBox="0 0 24 24" fill="currentColor" width="13" height="13"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg> GitHub</div>
-          </article>
-          <article class="proj-card">
-            <div class="card-top"><span class="proj-cat proj-cat-orange">APPLIED SECURITY</span><a class="external-link" href="https://github.com/kakshaykumar/applied-security-labs" target="_blank" rel="noreferrer" aria-label="View repository">↗</a></div>
-            <div class="proj-title-row"><div class="proj-icon proj-icon-orange"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="22" height="22"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div><h3>SQL Injection and RSA Cryptography Labs</h3></div>
-            <p>Annotated SQL injection exploitation lab against a simulated web app, and RSA-2048 cryptography implementation using real OpenSSL-generated keypairs with verifiable encrypted artifacts.</p>
-            <div class="proj-stats"><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg><strong>2</strong><span>Security Labs</span></div><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0 3 3L22 7l-3-3m-3.5 3.5L19 4"/></svg><strong>Real</strong><span>.pem Artifacts</span></div><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg><strong>OWASP</strong><span>Top 10</span></div></div>
-            <div class="tags"><span>SQL Injection</span><span>RSA-2048</span><span>OpenSSL</span><span>OWASP Top 10</span></div>
-            <div class="proj-gh-static"><svg viewBox="0 0 24 24" fill="currentColor" width="13" height="13"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg> GitHub</div>
-          </article>
-          <article class="proj-card">
-            <div class="card-top"><span class="proj-cat proj-cat-red">THREAT RESEARCH</span><a class="external-link" href="https://github.com/kakshaykumar/malware-progression-detection" target="_blank" rel="noreferrer" aria-label="View repository">↗</a></div>
-            <div class="proj-title-row"><div class="proj-icon proj-icon-red"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="22" height="22"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></div><h3>Malware Progression and Detection</h3></div>
-            <p>Malware evolution analysis from polymorphic to APTs, with 4 YARA detection rules targeting ransomware, polymorphic patterns, fileless PowerShell (T1059.001), and APT lateral movement (T1021).</p>
-            <div class="proj-stats"><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg><strong>4</strong><span>YARA Rules</span></div><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg><strong>3</strong><span>Detection Methods</span></div><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><strong>MITRE</strong><span>ATT&amp;CK Mapped</span></div></div>
-            <div class="tags"><span>YARA</span><span>MITRE ATT&amp;CK</span><span>Malware Analysis</span></div>
-            <div class="proj-gh-static"><svg viewBox="0 0 24 24" fill="currentColor" width="13" height="13"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg> GitHub</div>
-          </article>
-          <article class="proj-card">
-            <div class="card-top"><span class="proj-cat proj-cat-indigo">IDENTITY SECURITY</span><a class="external-link" href="https://github.com/kakshaykumar/identity-theft-research" target="_blank" rel="noreferrer" aria-label="View repository">↗</a></div>
-            <div class="proj-title-row"><div class="proj-icon proj-icon-indigo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="22" height="22"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div><h3>Identity Theft Case Studies and Countermeasures</h3></div>
-            <p>STRIDE-based analysis of Equifax, T-Mobile, and Facebook/Cambridge Analytica breaches — evaluating IAM failures, attack vectors, and which defensive controls would have prevented each incident.</p>
-            <div class="proj-stats"><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg><strong>3</strong><span>Case Studies</span></div><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg><strong>6</strong><span>Control Areas</span></div><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><path d="M9 11l3 3L22 4"/></svg><strong>STRIDE</strong><span>Threat Modeling</span></div></div>
-            <div class="tags"><span>IAM</span><span>Zero Trust</span><span>MFA</span><span>STRIDE</span></div>
-            <div class="proj-gh-static"><svg viewBox="0 0 24 24" fill="currentColor" width="13" height="13"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg> GitHub</div>
-          </article>
-        </div>
-      </section>
-
-      <!-- ACADEMICS: EDUCATION & CERTIFICATIONS -->
-      <section class="section reveal" id="certs" aria-labelledby="certs-title">
-        <p class="section-eyebrow">EDUCATION &amp; CERTIFICATIONS</p>
-        <div class="section-heading">
-          <h2 id="certs-title">Education &amp; Certifications</h2>
-          <span class="heading-rule"></span>
-        </div>
-        <div class="edu-section-wrap">
-          <div class="edu-section-head">
-            <div class="edu-section-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
-            <div><h3 class="subsection-label">Education</h3><p class="subsection-sub">Academic foundation in engineering and cybersecurity.</p></div>
-          </div>
-          <div class="edu-grid">
-            <div class="edu-card reveal">
-              <div class="edu-hex-icon">
-                <svg viewBox="0 0 60 70" fill="none" width="72" height="84">
-                  <path d="M30 4L56 18.5v33L30 66 4 51.5v-33L30 4z" stroke="rgba(138,215,176,0.5)" stroke-width="1.5" fill="rgba(138,215,176,0.05)"/>
-                  <path d="M30 22L46 30L30 38L14 30Z" stroke="rgba(138,215,176,0.9)" stroke-width="1.5" stroke-linejoin="round" fill="rgba(138,215,176,0.1)"/>
-                  <path d="M22 33v6c0 3.5 3.6 6 8 6s8-2.5 8-6v-6" stroke="rgba(138,215,176,0.9)" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-                  <line x1="14" y1="30" x2="14" y2="40" stroke="rgba(138,215,176,0.7)" stroke-width="1.5" stroke-linecap="round"/>
-                  <circle cx="14" cy="41" r="1.5" fill="rgba(138,215,176,0.7)"/>
-                </svg>
-              </div>
-              <div class="edu-body">
-                <h4 class="edu-degree">Master of Science</h4>
-                <p class="edu-major">Applied Information Technology — Concentration in Cybersecurity</p>
-                <p class="edu-school">George Mason University</p>
-                <p class="edu-meta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="13" height="13"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg> Aug 2024 – May 2026</p>
-              </div>
-            </div>
-            <div class="edu-card reveal">
-              <div class="edu-hex-icon">
-                <svg viewBox="0 0 60 70" fill="none" width="72" height="84">
-                  <path d="M30 4L56 18.5v33L30 66 4 51.5v-33L30 4z" stroke="rgba(107,183,232,0.5)" stroke-width="1.5" fill="rgba(107,183,232,0.05)"/>
-                  <path d="M30 22L46 30L30 38L14 30Z" stroke="rgba(107,183,232,0.9)" stroke-width="1.5" stroke-linejoin="round" fill="rgba(107,183,232,0.1)"/>
-                  <path d="M22 33v6c0 3.5 3.6 6 8 6s8-2.5 8-6v-6" stroke="rgba(107,183,232,0.9)" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-                  <line x1="14" y1="30" x2="14" y2="40" stroke="rgba(107,183,232,0.7)" stroke-width="1.5" stroke-linecap="round"/>
-                  <circle cx="14" cy="41" r="1.5" fill="rgba(107,183,232,0.7)"/>
-                </svg>
-              </div>
-              <div class="edu-body">
-                <h4 class="edu-degree">Bachelor of Engineering</h4>
-                <p class="edu-major">Electronics and Communication Engineering</p>
-                <p class="edu-school">Jeppiaar Maamallan Engineering College (Anna University)</p>
-                <p class="edu-meta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="13" height="13"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg> Aug 2017 – May 2021</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="certs-section-wrap">
-          <div class="edu-section-head">
-            <div class="edu-section-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="20" height="20"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div>
-            <div><h3 class="subsection-label">Certifications</h3><p class="subsection-sub">Professional certifications in cybersecurity and cloud security.</p></div>
-          </div>
-          <div class="cert-cards-grid">
-            <div class="cert-card">
-              <div class="cert-badge-wrap"><img class="cert-badge-img" src="https://images.credly.com/images/2030e43f-8003-4d4b-9630-847add403c87/image.png" alt="ISC2 CC" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="cert-icon" style="display:none;background:linear-gradient(135deg,#0a3d1f,#1a6b37)">ISC²</div></div>
-              <h3 class="cert-name">Certified in Cybersecurity</h3><span class="cert-abbr">CC</span><p class="cert-issuer">ISC2</p>
-              <p class="cert-dates">Mar 2026 <span class="cert-arrow">→</span> Mar 2029</p>
-              <a class="cert-verify" href="https://www.credly.com/badges/f3e58365-7489-4fb8-a7d1-b1cf901048ef/public_url" target="_blank" rel="noreferrer">Verify ↗</a>
-            </div>
-            <div class="cert-card">
-              <div class="cert-badge-wrap"><img class="cert-badge-img" src="https://images.credly.com/images/be8fcaeb-c769-4858-b567-ffaaa73ce8cf/image.png" alt="AZ-900" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="cert-icon" style="display:none;background:linear-gradient(135deg,#0a2d5c,#0078D4)">AZ</div></div>
-              <h3 class="cert-name">Microsoft Certified: Azure Fundamentals</h3><span class="cert-abbr">AZ-900</span><p class="cert-issuer">Microsoft</p>
-              <p class="cert-dates">May 2026</p>
-              <a class="cert-verify" href="https://learn.microsoft.com/en-us/users/akshaykumarkathirvelu-2388/credentials/certification/azure-fundamentals?tab=credentials-tab" target="_blank" rel="noreferrer">Verify ↗</a>
-            </div>
-            <div class="cert-card">
-              <div class="cert-badge-wrap"><img class="cert-badge-img" src="https://images.credly.com/images/20082fc1-94af-4773-9df0-28856b566748/image.png" alt="FCA" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="cert-icon" style="display:none;background:linear-gradient(135deg,#6b0000,#c0392b)">FCA</div></div>
-              <h3 class="cert-name">Fortinet Certified Associate Cybersecurity</h3><span class="cert-abbr">FCA</span><p class="cert-issuer">Fortinet</p>
-              <p class="cert-dates">Apr 2026 <span class="cert-arrow">→</span> Apr 2028</p>
-              <a class="cert-verify" href="https://www.credly.com/badges/88078cd2-6534-4591-8d6c-97847df4c582/public_url" target="_blank" rel="noreferrer">Verify ↗</a>
-            </div>
-            <div class="cert-card">
-              <div class="cert-badge-wrap"><img class="cert-badge-img" src="https://images.credly.com/images/22a0ece5-ff05-4594-8320-25e55e9ae203/image.png" alt="FCF" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="cert-icon" style="display:none;background:linear-gradient(135deg,#5c1a00,#d35400)">FCF</div></div>
-              <h3 class="cert-name">Fortinet Certified Fundamentals Cybersecurity</h3><span class="cert-abbr">FCF</span><p class="cert-issuer">Fortinet</p>
-              <p class="cert-dates">Apr 2026 <span class="cert-arrow">→</span> Apr 2028</p>
-              <a class="cert-verify" href="https://www.credly.com/badges/02b1eefc-fc87-457d-9d6c-4f12976faf2b/public_url" target="_blank" rel="noreferrer">Verify ↗</a>
-            </div>
-            <div class="cert-card">
-              <div class="cert-badge-wrap"><img class="cert-badge-img" src="https://images.credly.com/images/63960df8-1b2d-4409-bb11-c2f1b6642f42/image.png" alt="Splunk" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="cert-icon" style="display:none;background:linear-gradient(135deg,#3d1a00,#e84118)">Splunk</div></div>
-              <h3 class="cert-name">Splunk Core User Training <span class="cert-coursework">[Coursework]</span></h3><span class="cert-abbr">Splunk Training</span><p class="cert-issuer">Splunk</p>
-              <p class="cert-dates">Apr 2026</p>
-            </div>
-            <div class="cert-card">
-              <div class="cert-badge-wrap"><img class="cert-badge-img" src="https://cdn.simpleicons.org/tryhackme/1db954" alt="TryHackMe" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="cert-icon" style="display:none;background:linear-gradient(135deg,#3d0000,#c0392b)">THM</div></div>
-              <h3 class="cert-name">Pre Security Certificate</h3><span class="cert-abbr">Pre Security</span><p class="cert-issuer">TryHackMe</p>
-              <p class="cert-dates">Jun 2025 <span class="cert-arrow">→</span> Feb 2029</p>
-              <a class="cert-verify" href="https://tryhackme.com/certificate/THM-CVBGI9ZOTA" target="_blank" rel="noreferrer">Verify ↗</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- WRITEUPS -->
-      <section class="section reveal" id="writing" aria-labelledby="writing-title">
-        <div class="writing-topbar">
-          <p class="section-eyebrow" id="writing-title">WRITEUPS</p>
-          <a class="medium-sm-badge" href="https://medium.com/@akshaykumar_90336" target="_blank" rel="noreferrer">
-            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></svg>
-            MEDIUM
+          <a class="text-link" href="https://github.com/kakshaykumar?tab=repositories" target="_blank" rel="noreferrer">
+            All repositories
           </a>
         </div>
+
+        <div class="project-grid">
+
+          <article class="project-card major">
+            <div class="card-top">
+              <span class="project-type">Cloud Security</span>
+              <a class="external-link" href="https://github.com/kakshaykumar/cloud-security-iaas" target="_blank" rel="noreferrer" aria-label="Open Cloud Security Assessment repository">
+                <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+            <h3>Azure vs GCP Default IaaS Security Review</h3>
+            <p>
+              Provisioned default Azure and GCP cloud infrastructure, then performed a comparative security assessment 
+              across IAM, network controls, encryption, storage exposure, logging, and monitoring configurations.
+            </p>
+            <ul class="check-list">
+              <li>Evaluated default logging visibility and monitoring coverage across both platforms.</li>
+              <li>Compared Azure Blob Storage and GCP Cloud Storage default public access exposure.</li>
+              <li>Delivered CIS/NIST-aligned hardening recommendations.</li>
+            </ul>
+            <div class="proj-metrics">
+              <div>
+                <strong>2 Platforms</strong>
+                <span>Azure · GCP</span>
+              </div>
+              <div>
+                <strong>6 Domains</strong>
+                <span>IAM · Network · Logging · Encryption · Storage · Monitoring</span>
+              </div>
+            </div>
+            <div class="tags">
+              <span>Azure</span><span>GCP</span><span>IAM</span><span>CIS</span><span>NIST</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="card-top">
+              <span class="project-type">Network Security</span>
+              <a class="external-link" href="https://github.com/kakshaykumar/network-security-labs" target="_blank" rel="noreferrer" aria-label="Open Network Security Labs repository">
+                <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+            <h3>Network Security Labs: Vulnerability Scanning, Protocol Analysis, NAT/VPN</h3>
+            <p>
+              Conducted live vulnerability scanning with Nessus, protocol analysis using Wireshark across 
+              ICMP, TLS, TCP, UDP, and RTP, and NAT/VPN behavior analysis using real terminal output and packet capture data.
+            </p>
+            <div class="proj-metrics">
+              <div>
+                <strong>3 Lab Scenarios</strong>
+                <span>Live hands-on environments</span>
+              </div>
+              <div>
+                <strong>5 Protocols</strong>
+                <span>Real packet captures</span>
+              </div>
+            </div>
+            <div class="tags">
+              <span>Nessus</span><span>Wireshark</span><span>NAT/VPN</span><span>CVSS</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="card-top">
+              <span class="project-type">Applied Security</span>
+              <a class="external-link" href="https://github.com/kakshaykumar/applied-security-labs" target="_blank" rel="noreferrer" aria-label="Open Applied Security Labs repository">
+                <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+            <h3>SQL Injection and RSA Cryptography Labs</h3>
+            <p>
+              Implemented hands-on SQL injection and RSA-2048 cryptography labs 
+              using real OpenSSL-generated keypairs and encrypted artifacts.
+            </p>
+            <div class="proj-metrics">
+              <div>
+                <strong>2 Techniques</strong>
+                <span>Offensive · Cryptographic</span>
+              </div>
+              <div>
+                <strong>Real Artifacts</strong>
+                <span>.pem · .enc files</span>
+              </div>
+            </div>
+            <div class="tags">
+              <span>SQL Injection</span><span>RSA-2048</span><span>OpenSSL</span><span>OWASP</span><span>Cryptography</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="card-top">
+              <span class="project-type">Threat Research</span>
+              <a class="external-link" href="https://github.com/kakshaykumar/malware-progression-detection" target="_blank" rel="noreferrer" aria-label="Open Malware Progression and Detection repository">
+                <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+            <h3>Malware Progression and Detection</h3>
+            <p>
+              Researched malware evolution from polymorphic and fileless techniques to advanced persistent threats, 
+              analyzing modern detection approaches across signature, behavioral, and machine learning-based methods.
+            </p>
+            <div class="proj-metrics">
+              <div>
+                <strong>19 Sources</strong>
+                <span>Peer-reviewed research</span>
+              </div>
+              <div>
+                <strong>3 Detection Approaches</strong>
+                <span>Signature · Behavior · ML</span>
+              </div>
+            </div>
+            <div class="tags">
+              <span>Malware Analysis</span><span>Threat Detection</span><span>Machine Learning</span><span>Threat Research</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="card-top">
+              <span class="project-type">Identity Security</span>
+              <a class="external-link" href="https://github.com/kakshaykumar/identity-theft-research" target="_blank" rel="noreferrer" aria-label="Open Identity Theft Research repository">
+                <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+            <h3>Identity Theft Case Studies and Countermeasures</h3>
+            <p>
+              Conducted case-study analysis of major identity-related breaches, evaluating attack vectors, control failures,
+              and prevention strategies across IAM, MFA, Zero Trust, monitoring, encryption, and governance.
+            </p>
+            <div class="proj-metrics">
+              <div>
+                <strong>3 Case Studies</strong>
+                <span>Equifax · Cambridge Analytica · T-Mobile</span>
+              </div>
+              <div>
+                <strong>6 Control Areas</strong>
+                <span>IAM · MFA · Zero Trust · Encryption · Monitoring · Governance</span>
+              </div>
+            </div>
+            <div class="tags">
+              <span>IAM</span><span>MFA</span><span>Zero Trust</span><span>Identity Security</span>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- ── SKILLS ──────────────────────────────────────────── -->
+      <section class="section reveal" id="skills" aria-labelledby="skills-title">
         <div class="section-heading">
-          <h2>Writeups</h2>
+          <h2 id="skills-title">Technical Skills</h2>
           <span class="heading-rule"></span>
+        </div>
+
+        <div class="skill-cat-grid">
+
+          <div class="skill-cat-card">
+            <p class="skill-cat-label">🔍 SIEM &amp; Security Monitoring</p>
+            <div class="skill-chips">
+              <span class="chip hi">Splunk (SPL)</span>
+              <span class="chip hi">Wireshark</span>
+              <span class="chip hi">Nessus / Qualys</span>
+              <span class="chip">Microsoft Sentinel</span>
+              <span class="chip">Wazuh</span>
+              <span class="chip">Microsoft Defender</span>
+              <span class="chip">SOAR</span>
+              <span class="chip">Windows Event Viewer</span>
+            </div>
+          </div>
+
+          <div class="skill-cat-card">
+            <p class="skill-cat-label">🌐 Network &amp; Infrastructure</p>
+            <div class="skill-chips">
+              <span class="chip hi">HPE-Aruba (Comware, ArubaOS CX)</span>
+              <span class="chip hi">802.1X / RADIUS / TACACS+</span>
+              <span class="chip hi">SolarWinds / HPE IMC</span>
+              <span class="chip">Cisco / Arista</span>
+              <span class="chip">VLANs / STP / OSPF</span>
+              <span class="chip">BGP / MPLS</span>
+              <span class="chip">IPSec / SSL/TLS</span>
+            </div>
+          </div>
+
+          <div class="skill-cat-card">
+            <p class="skill-cat-label">☁️ Cloud &amp; IAM</p>
+            <div class="skill-chips">
+              <span class="chip hi">Microsoft Azure</span>
+              <span class="chip hi">Active Directory / Entra ID</span>
+              <span class="chip">Google Cloud Platform</span>
+              <span class="chip">AWS</span>
+              <span class="chip">IAM / RBAC</span>
+              <span class="chip">Defender for Cloud</span>
+              <span class="chip">Cloud Logging / SCC</span>
+            </div>
+          </div>
+
+          <div class="skill-cat-card">
+            <p class="skill-cat-label">⚔️ Offensive Security &amp; Assessment</p>
+            <div class="skill-chips">
+              <span class="chip hi">Nmap</span>
+              <span class="chip hi">Metasploit</span>
+              <span class="chip hi">Burp Suite</span>
+              <span class="chip">Autopsy</span>
+              <span class="chip">PowerShell / Python</span>
+              <span class="chip">SQL Injection</span>
+              <span class="chip">OpenSSL / RSA</span>
+            </div>
+          </div>
+
+          <div class="skill-cat-card">
+            <p class="skill-cat-label">📋 Frameworks &amp; Standards</p>
+            <div class="skill-chips">
+              <span class="chip hi">MITRE ATT&amp;CK</span><span class="chip hi">NIST IR Lifecycle</span>
+              <span class="chip hi">OWASP Top 10</span><span class="chip">STRIDE</span>
+              <span class="chip">DREAD</span><span class="chip">CVSS</span>
+              <span class="chip">VAPT</span><span class="chip">CMMC</span>
+            </div>
+          </div>
+
+          <div class="skill-cat-card">
+            <p class="skill-cat-label">💻 Systems &amp; Automation</p>
+            <div class="skill-chips">
+              <span class="chip hi">Linux</span><span class="chip hi">Kali Linux</span>
+              <span class="chip hi">Windows</span><span class="chip">PowerShell</span>
+              <span class="chip">Python</span><span class="chip">Java</span>
+              <span class="chip">SQL</span><span class="chip">Bash</span><span class="chip">Git</span>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- ── CERTIFICATIONS ─────────────────────────────────── -->
+      <section class="section reveal certs" aria-labelledby="certs-title">
+        <div class="section-heading">
+          <h2 id="certs-title">Certifications</h2>
+          <span class="heading-rule"></span>
+        </div>
+        <div class="cert-cards-grid">
+
+          <div class="cert-card">
+            <div class="cert-badge-wrap">
+              <img class="cert-badge-img" src="https://images.credly.com/images/2030e43f-8003-4d4b-9630-847add403c87/image.png" alt="ISC2 CC" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="cert-icon" style="display:none;background:linear-gradient(135deg,#0a3d1f,#1a6b37)">ISC²</div>
+            </div>
+            <h3 class="cert-name">Certified in Cybersecurity</h3>
+            <span class="cert-abbr">CC</span>
+            <p class="cert-issuer">ISC2</p>
+            <p class="cert-dates">Mar 2026 <span class="cert-arrow">→</span> Mar 2029</p>
+            <div class="cert-skills"><span>Security Ops</span><span>Network Security</span><span>Access Controls</span></div>
+            <a class="cert-verify" href="https://www.credly.com/badges/f3e58365-7489-4fb8-a7d1-b1cf901048ef/public_url" target="_blank" rel="noreferrer">Verify ↗</a>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-badge-wrap">
+              <img class="cert-badge-img" src="https://images.credly.com/images/be8fcaeb-c769-4858-b567-ffaaa73ce8cf/image.png" alt="AZ-900" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="cert-icon" style="display:none;background:linear-gradient(135deg,#0a2d5c,#0078D4)">AZ</div>
+            </div>
+            <h3 class="cert-name">Microsoft Certified: Azure Fundamentals</h3>
+            <span class="cert-abbr">AZ-900</span>
+            <p class="cert-issuer">Microsoft</p>
+            <p class="cert-dates">May 2026</p>
+            <div class="cert-skills"><span>Azure</span><span>Cloud Security</span><span>IAM</span></div>
+            <a class="cert-verify" href="https://learn.microsoft.com/en-us/users/akshaykumarkathirvelu-2388/credentials/certification/azure-fundamentals?tab=credentials-tab" target="_blank" rel="noreferrer">Verify ↗</a>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-badge-wrap">
+              <img class="cert-badge-img" src="https://images.credly.com/images/20082fc1-94af-4773-9df0-28856b566748/image.png" alt="FCA" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="cert-icon" style="display:none;background:linear-gradient(135deg,#6b0000,#c0392b)">FCA</div>
+            </div>
+            <h3 class="cert-name">Fortinet Certified Associate Cybersecurity</h3>
+            <span class="cert-abbr">FCA</span>
+            <p class="cert-issuer">Fortinet</p>
+            <p class="cert-dates">Apr 2026 <span class="cert-arrow">→</span> Apr 2028</p>
+            <div class="cert-skills"><span>FortiGate</span><span>Network Security</span><span>Firewall</span></div>
+            <a class="cert-verify" href="https://www.credly.com/badges/88078cd2-6534-4591-8d6c-97847df4c582/public_url" target="_blank" rel="noreferrer">Verify ↗</a>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-badge-wrap">
+              <img class="cert-badge-img" src="https://images.credly.com/images/22a0ece5-ff05-4594-8320-25e55e9ae203/image.png" alt="FCF" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="cert-icon" style="display:none;background:linear-gradient(135deg,#5c1a00,#d35400)">FCF</div>
+            </div>
+            <h3 class="cert-name">Fortinet Certified Fundamentals Cybersecurity</h3>
+            <span class="cert-abbr">FCF</span>
+            <p class="cert-issuer">Fortinet</p>
+            <p class="cert-dates">Apr 2026 <span class="cert-arrow">→</span> Apr 2028</p>
+            <div class="cert-skills"><span>Cybersecurity</span><span>Threat Landscape</span><span>Fundamentals</span></div>
+            <a class="cert-verify" href="https://www.credly.com/badges/02b1eefc-fc87-457d-9d6c-4f12976faf2b/public_url" target="_blank" rel="noreferrer">Verify ↗</a>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-badge-wrap">
+              <img class="cert-badge-img" src="https://images.credly.com/images/63960df8-1b2d-4409-bb11-c2f1b6642f42/image.png" alt="Splunk" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="cert-icon" style="display:none;background:linear-gradient(135deg,#3d1a00,#e84118)">Splunk</div>
+            </div>
+            <h3 class="cert-name">Splunk Certified Core User <span class="cert-coursework">[Coursework]</span></h3>
+            <span class="cert-abbr">Splunk Training</span>
+            <p class="cert-issuer">Splunk</p>
+            <p class="cert-dates">Apr 2026</p>
+            <div class="cert-skills"><span>Splunk</span><span>SIEM</span><span>Log Analysis</span></div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-badge-wrap">
+              <img class="cert-badge-img" src="https://cdn.simpleicons.org/tryhackme/1db954" alt="TryHackMe" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+              <div class="cert-icon" style="display:none;background:linear-gradient(135deg,#3d0000,#c0392b)">THM</div>
+            </div>
+            <h3 class="cert-name">Pre Security Certificate</h3>
+            <span class="cert-abbr">Pre Security</span>
+            <p class="cert-issuer">TryHackMe</p>
+            <p class="cert-dates">Jun 2025 <span class="cert-arrow">→</span> Feb 2029</p>
+            <div class="cert-skills"><span>Networking</span><span>Linux</span><span>Web Security</span></div>
+            <a class="cert-verify" href="https://tryhackme.com/certificate/THM-CVBGI9ZOTA" target="_blank" rel="noreferrer">Verify ↗</a>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ── WRITING ─────────────────────────────────────────── -->
+      <section class="section reveal" id="writing" aria-labelledby="writing-title">
+        <div class="section-heading with-action">
+          <div>
+            <h2 id="writing-title">Writing</h2>
+            <span class="heading-rule"></span>
+          </div>
+          <a class="text-link" href="https://medium.com/@akshaykumar_90336" target="_blank" rel="noreferrer">Medium profile</a>
         </div>
         <div class="writing-grid">
-          <a class="writing-card" href="https://medium.com/@akshaykumar_90336/overthewire-natas-building-a-ctf-mindset-ad1a823ba614" target="_blank" rel="noreferrer">
-            <div class="wc-top"><span class="wc-cat wc-cat-green">OFFENSIVE SECURITY</span></div>
-            <div class="wc-body"><div class="wc-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="22" height="22"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg></div><h3>Building a CTF Mindset</h3></div>
-            <p>Turning beginner web challenges into repeatable offensive security habits — OverTheWire Natas Level 0 to 1.</p>
-            <div class="wc-foot"><span class="wc-year">© 2026</span><span class="wc-read">5 min read</span></div>
+          <a href="https://medium.com/@akshaykumar_90336/overthewire-natas-building-a-ctf-mindset-ad1a823ba614" target="_blank" rel="noreferrer">
+            <span>OverTheWire Natas</span>
+            <h3>Building a CTF Mindset</h3>
+            <p>Turning beginner web challenges into repeatable offensive security habits.</p>
           </a>
-          <a class="writing-card" href="https://medium.com/@akshaykumar_90336/overthewire-natas-level-1-level-2-feff2d0663ba" target="_blank" rel="noreferrer">
-            <div class="wc-top"><span class="wc-cat wc-cat-blue">CTF WALKTHROUGH</span></div>
-            <div class="wc-body"><div class="wc-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="22" height="22"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div><h3>Natas Level 1 → Level 2</h3></div>
-            <p>Documenting observation, page inspection, and progressive challenge solving through hands-on web app enumeration.</p>
-            <div class="wc-foot"><span class="wc-year">© 2026</span><span class="wc-read">4 min read</span></div>
+          <a href="https://medium.com/@akshaykumar_90336/overthewire-natas-level-1-level-2-feff2d0663ba" target="_blank" rel="noreferrer">
+            <span>Walkthrough</span>
+            <h3>Natas Level 1 to Level 2</h3>
+            <p>Documenting observation, page inspection, and progressive challenge solving.</p>
           </a>
-          <a class="writing-card" href="https://medium.com/@akshaykumar_90336/nothing-on-this-page-but-what-about-other-pages-b13d9111a117" target="_blank" rel="noreferrer">
-            <div class="wc-top"><span class="wc-cat wc-cat-purple">WEB SECURITY</span></div>
-            <div class="wc-body"><div class="wc-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="22" height="22"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></div><h3>Natas Level 2 → Level 3</h3></div>
-            <p>A practical note on looking beyond visible UI when investigating web applications for hidden attack surfaces.</p>
-            <div class="wc-foot"><span class="wc-year">© 2026</span><span class="wc-read">5 min read</span></div>
+          <a href="https://medium.com/@akshaykumar_90336/nothing-on-this-page-but-what-about-other-pages-b13d9111a117" target="_blank" rel="noreferrer">
+            <span>Web Security</span>
+            <h3>Nothing on This Page. What About Other Pages?</h3>
+            <p>A practical note on looking beyond visible UI when investigating web apps.</p>
           </a>
-          <a class="writing-card" href="https://medium.com/@akshaykumar_90336/it-wasnt-maintenance-it-was-a-ransom-note-ced2a7f1962c" target="_blank" rel="noreferrer">
-            <div class="wc-top"><span class="wc-cat wc-cat-red">INCIDENT NARRATIVE</span></div>
-            <div class="wc-body"><div class="wc-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="22" height="22"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></div><h3>It Wasn't Maintenance. It Was a Ransom Note.</h3></div>
-            <p>Security storytelling around ransomware impact, operational disruption, and incident response thinking.</p>
-            <div class="wc-foot"><span class="wc-year">© 2026</span><span class="wc-read">6 min read</span></div>
+          <a href="https://medium.com/@akshaykumar_90336/it-wasnt-maintenance-it-was-a-ransom-note-ced2a7f1962c" target="_blank" rel="noreferrer">
+            <span>Incident Narrative</span>
+            <h3>It Wasn't Maintenance. It Was a Ransom Note.</h3>
+            <p>Security storytelling around ransomware impact and operational disruption.</p>
           </a>
         </div>
       </section>
 
-      <!-- CONTACT -->
+      <!-- ── CONTACT ─────────────────────────────────────────── -->
       <section class="section reveal" id="contact" aria-labelledby="contact-title">
-        <p class="section-eyebrow">CONTACT</p>
         <div class="section-heading">
-          <h2 id="contact-title">Let's <span class="text-accent">Connect</span></h2>
+          <h2 id="contact-title">Contact</h2>
           <span class="heading-rule"></span>
         </div>
-        <div class="contact-layout">
 
-          <!-- LEFT: info-style link cards -->
-          <div class="contact-left">
-            <p class="contact-tagline">Let's build a more secure digital future together.</p>
+        <div class="contact-new">
+          <div class="contact-left-col">
+            <div class="contact-text">
+              <p>Targeting Security Engineering, Security Operations, and Infrastructure Security roles.</p>
+              <p class="contact-sub">Open to remote, hybrid, and on-site opportunities</p>
+            </div>
+
+            <!-- Email / LinkedIn / GitHub as info cards -->
             <div class="contact-link-cards">
 
               <a class="contact-link-card" href="mailto:kakshaykumark@gmail.com">
-                <div class="cic-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+                <div class="cic-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
                 <div>
                   <p class="cic-label">Email</p>
                   <p class="cic-val">kakshaykumark@gmail.com</p>
@@ -567,7 +619,9 @@
               </a>
 
               <a class="contact-link-card" href="https://www.linkedin.com/in/akshaykumar-kathirvelu/" target="_blank" rel="noreferrer">
-                <div class="cic-icon"><svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></div>
+                <div class="cic-icon">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                </div>
                 <div>
                   <p class="cic-label">LinkedIn</p>
                   <p class="cic-val">linkedin.com/in/akshaykumar-kathirvelu</p>
@@ -575,7 +629,9 @@
               </a>
 
               <a class="contact-link-card" href="https://github.com/kakshaykumar" target="_blank" rel="noreferrer">
-                <div class="cic-icon"><svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg></div>
+                <div class="cic-icon">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                </div>
                 <div>
                   <p class="cic-label">GitHub</p>
                   <p class="cic-val">github.com/kakshaykumar</p>
@@ -583,13 +639,29 @@
               </a>
 
             </div>
-          </div>
 
-          <!-- RIGHT: three separate cards -->
-          <div class="contact-right">
+            <!-- Other social icons (unchanged) -->
+            <div class="contact-icon-row">
+              <a class="contact-icon-btn" href="https://medium.com/@akshaykumar_90336" target="_blank" rel="noreferrer" title="Medium" aria-label="Medium">
+                <span class="icon-letter-m">M</span>
+              </a>
+              <a class="contact-icon-btn" href="https://tryhackme.com/p/akshayk" target="_blank" rel="noreferrer" title="TryHackMe" aria-label="TryHackMe">
+                <img src="https://cdn.simpleicons.org/tryhackme/a5b2c2" alt="TryHackMe" width="26" height="26" class="contact-icon-img">
+              </a>
+              <a class="contact-icon-btn" href="https://discord.com/users/akshaykumar09458" target="_blank" rel="noreferrer" title="Discord" aria-label="Discord">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="26" height="26"><path d="M20.317 4.369A19.791 19.791 0 0 0 15.885 3c-.191.328-.403.775-.552 1.124a18.27 18.27 0 0 0-5.666 0A12.64 12.64 0 0 0 9.115 3a19.736 19.736 0 0 0-4.433 1.369C1.884 8.58.127 12.682.567 16.73a19.9 19.9 0 0 0 5.993 3.031c.486-.665.92-1.37 1.291-2.11-.71-.269-1.387-.602-2.023-.993.17-.124.336-.253.497-.387 3.9 1.833 8.128 1.833 11.982 0 .162.134.328.263.497.387-.637.391-1.314.724-2.024.993.372.74.806 1.445 1.292 2.11a19.89 19.89 0 0 0 5.993-3.031c.515-4.694-.88-8.759-4.75-12.361zM8.02 14.121c-1.183 0-2.157-1.085-2.157-2.419 0-1.334.955-2.419 2.157-2.419 1.211 0 2.176 1.095 2.157 2.419 0 1.334-.955 2.419-2.157 2.419zm7.96 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.334.955-2.419 2.157-2.419 1.211 0 2.176 1.095 2.157 2.419 0 1.334-.946 2.419-2.157 2.419z"/></svg>
+              </a>
+            </div>
+
+          </div><!-- /contact-left-col -->
+
+          <!-- Right: Location + Availability as two separate boxes -->
+          <div class="contact-right-col">
 
             <div class="contact-info-card">
-              <div class="cic-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+              <div class="cic-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
               <div>
                 <p class="cic-label">Location</p>
                 <p class="cic-val">United States</p>
@@ -597,7 +669,9 @@
             </div>
 
             <div class="contact-info-card">
-              <div class="cic-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+              <div class="cic-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              </div>
               <div>
                 <p class="cic-label">Availability</p>
                 <p class="cic-val cic-avail"><span class="avail-dot-sm"></span>Actively Seeking Full-Time Roles</p>
@@ -605,21 +679,14 @@
               </div>
             </div>
 
-            <div class="contact-info-card">
-              <div class="cic-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="18" height="18"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg></div>
-              <div>
-                <p class="cic-label">Roles</p>
-                <p class="cic-val">SOC Analyst &nbsp;·&nbsp; Network Security &nbsp;·&nbsp; Cloud Security</p>
-              </div>
-            </div>
+          </div><!-- /contact-right-col -->
 
-          </div>
-        </div>
+        </div><!-- /contact-new -->
+
       </section>
 
     </main>
-
-    <footer class="footer">
+<footer class="footer">
       <p>Akshaykumar Kathirvelu · Portfolio</p>
       <a href="#top">Back to top ↑</a>
     </footer>
