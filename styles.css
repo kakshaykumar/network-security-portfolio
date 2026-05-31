@@ -261,7 +261,8 @@ h4{margin-bottom:.35rem;font-size:1rem}
 .contact-brand{font-size:1.15rem;font-weight:700;color:var(--accent-2);margin-bottom:.35rem}
 .contact-tagline{color:var(--muted);font-size:.9rem;margin-bottom:1.5rem}
 .contact-social-links{display:flex;flex-wrap:wrap;gap:.65rem}
-.cs-link{display:inline-flex;align-items:center;gap:.5rem;padding:.55rem .9rem;border:1px solid var(--line);border-radius:var(--radius);background:var(--panel);color:var(--muted);font-size:.82rem;font-weight:600;transition:border-color 180ms,color 180ms,background 180ms}
+.cs-link{display:flex;align-items:center;gap:.85rem;padding:.9rem 1rem;border:1px solid var(--line);border-radius:var(--radius);background:var(--panel);color:var(--muted);font-size:.82rem;font-weight:600;transition:border-color 200ms,color 180ms,background 180ms,transform 180ms}
+.cs-link:hover{transform:translateY(-1px)}
 .cs-link:hover{border-color:rgba(138,215,176,.4);color:var(--accent-2);background:rgba(138,215,176,.07)}
 .cs-link img{filter:brightness(.75) saturate(.5);transition:filter 180ms}
 .cs-link:hover img{filter:brightness(1) saturate(1) hue-rotate(140deg)}
