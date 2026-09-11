@@ -49,3 +49,14 @@ if(typingTarget){
   }
   setTimeout(type,900);
 }
+
+// ── FEATURED PROJECTS TOGGLE ─────────────────────────────────────
+const projToggle=document.querySelector('.proj-toggle');
+const projGrid=document.querySelector('.proj-grid');
+if(projToggle&&projGrid){
+  projToggle.addEventListener('click',()=>{
+    const open=projGrid.classList.toggle('show-all');
+    projToggle.setAttribute('aria-expanded',String(open));
+    projToggle.textContent=open?projToggle.dataset.less:projToggle.dataset.more;
+  });
+}

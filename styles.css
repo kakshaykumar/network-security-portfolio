@@ -317,3 +317,11 @@ h4{margin-bottom:.35rem;font-size:1rem}
 }
 @media(max-width:600px){.cert-cards-grid .cert-card{flex-basis:calc(50% - .5rem)}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+
+/* Resume button, featured projects toggle */
+.btn-secondary{display:inline-flex;align-items:center;justify-content:center;min-height:46px;border:1px solid rgba(138,215,176,.45);border-radius:var(--radius);background:rgba(138,215,176,.06);color:var(--accent-2);font-size:.95rem;font-weight:800;padding:.65rem 1.5rem;cursor:pointer;transition:transform 180ms,background 180ms}
+.btn-secondary:hover{transform:translateY(-2px);background:rgba(138,215,176,.12)}
+.hero-copy-center .btn-secondary{margin:0 auto}
+.proj-extra{display:none}
+.proj-grid.show-all .proj-extra{display:flex}
+.proj-toggle-wrap{display:flex;justify-content:center;margin-top:1.25rem}
