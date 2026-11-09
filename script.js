@@ -30,14 +30,13 @@ new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){cons
 secs.forEach(s=>new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){const id=e.target.id;navAs.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+id))}})},{threshold:.3}).observe(s));
 
 // ── REVEAL ON SCROLL ──────────────────────────────────────────────
-new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('is-visible');}}),{threshold:.08}}).observe;
 const ro=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('is-visible')}})},{threshold:.08});
 document.querySelectorAll('.reveal').forEach(el=>ro.observe(el));
 
 // ── TYPING ANIMATION ──────────────────────────────────────────────
 const typingTarget=document.getElementById('typing-role');
 if(typingTarget){
-  const roles=['SOC_Analyst','Blue_Team_Defender','Network_Security_Engineer','Cloud_Security_Analyst','Cybersecurity_Professional'];
+  const roles=['Security_Analyst','Security_Engineer','Network_Security_Engineer','Cloud_Security_Analyst','Cybersecurity_Professional'];
   let ri=0,ci=0,del=false;
   function type(){
     const cur=roles[ri];
